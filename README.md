@@ -1,4 +1,9 @@
 <h2> OSI Model -> Open Systems Interconnnection Model</h3>
+<p>
+    <h3>Summary:</h3>
+    <p>This is a research / personal project on the interwokrings and fundumental processes of the Open System Interconnection Model (OSI Model). </p>
+</p>
+<hr></hr>
 <p>The Open system Interconnection Model is a seven layer conceptual model that characterizes and stadarizes the communication functions of a telecommunication or computing system across the industry.
     Consider this: A Mac system wants to communicate with a Windows system, programmed differently, this would've been imposible. However, due to the Open Systems Interconnection Model (OSI Model), the seperate systems are able to commmunicate and send data arcoss the internet.
     <p>
@@ -26,9 +31,17 @@
         <p><b>Goal:</b> Create & manage a connection between a local application and a remote application. Imbedded with a Syncrhoniztion and Resyncronization technique to improve data stream effiecency.</p>
     </li>
     <li><h3>Layer Four: Transport Layer</h3>
-
-
+        <p>This layer is responsible for network traffic betwen hosts, as mentioned in <a Href ="https://learningnetwork.cisco.com/s/article/osi-model-reference-chart"> The CISCO Learning Network</a>; it "ensures that mesages are delivered error-free, in sequence, and with no losses or duplications". Layer Four is where we see a change in developer roles, while Application Delelopers typically work from layer Seven to Five, Network Developers focus on layer four through one. In Layer four, we see the data begin to assemble itself. If large enough, for reliable and effiecient transport of data, the transport layer tends to break data in fragments or better yet "Segments". With this, a layer four header is attached onto each segment. At this stage, the data can be classified as a "Segment". </p>
+        <p><b>Goals:</b> Guarentee Data is delivered to its destination with accuracy and efficency using segments. 
     </li>
+    <li><h3>Layer Three: Network Layer</h3>
+        <p>Routers operate in this layer, routers are used to connect seperate hosts arcoss the internet (I.E Outside of a Local Area Network). This is what the Network Layer is doing, logically joining networks using IP adressing (32 Bits, represented as 4 octets, each ranging from 0 - 255). Commonly Confused with the structure of Layer two, the IP Address provides us an end to end path. Once at a router, the Layer Two frame gets decapsulated, the end to end IP Adresses allow for the router to contiunue it towards its destination. </p>
+        <p><b>Action:<b> Route data across the internet by associting each segment (created in Layer Four: Network layer) with an IP address (if you are encapsulating data) or Fragmentation and Reassembing packets (if you are decapsulating data) for end to end data transmission. </p>
+        <p><b>Goal:</b> Subnet networks to prevent IP Waste, Peformance Issues, and Mitigate Security Risks. Allowing us to save IP address storage (for future host growths with the Local Area Network), keep networks faster, and protect sensitive data.
+    </li>
+
 </ul>
 <p><b>Citations and Referances:</b></p>
-<p><i>Coursera "Understanding the Apllication Layer of the OSI Model" - Coursear Staff : https://www.coursera.org/articles/application-layer</i></p>
+<p><a href = "https://learningnetwork.cisco.com/s/article/osi-model-reference-chart"><i>The CISCO Learning Network "OSI Model Reference Chart" :  https://learningnetwork.cisco.com/s/article/osi-model-reference-chart</i></a></p>
+<p><a href = "https://www.geeksforgeeks.org/computer-networks/open-systems-interconnection-model-osi/"><i>Geeks for Geeks "What is the OSI Model? - Layers of OSI Model" :  https://www.geeksforgeeks.org/computer-networks/open-systems-interconnection-model-osi/</i></a></p>
+<p><a href = "https://www.coursera.org/articles/application-layer" ><i>Coursera "Understanding the Apllication Layer of the OSI Model" - Coursear Staff : https://www.coursera.org/articles/application-layer</i></a></p>
