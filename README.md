@@ -35,12 +35,22 @@
         <p><b>Goals:</b> Guarentee Data is delivered to its destination with accuracy and efficency using segments. 
     </li>
     <li><h3>Layer Three: Network Layer</h3>
-        <p>Routers operate in this layer, routers are used to connect seperate hosts arcoss the internet (I.E Outside of a Local Area Network). This is what the Network Layer is doing, logically joining networks using IP adressing (32 Bits, represented as 4 octets, each ranging from 0 - 255). Commonly Confused with the structure of Layer two, the IP Address provides us an end to end path. Once at a router, the Layer Two frame gets decapsulated, the end to end IP Adresses allow for the router to contiunue it towards its destination. </p>
-        <p><b>Action:<b> Route data across the internet by associting each segment (created in Layer Four: Network layer) with an IP address (if you are encapsulating data) or Fragmentation and Reassembing packets (if you are decapsulating data) for end to end data transmission. </p>
+        <p>Routers operate in this layer, routers are used to connect seperate hosts arcoss the internet (I.E Outside of a Local Area Network). This is what the Network Layer is doing, logically joining networks using IP adressing (32 Bits, represented as 4 octets, each ranging from 0 - 255). The IP Address is then stored within a Layer Three Network Header, creating a "Packet". Commonly misinterpreted with the structure of Layer two, the IP Address provides us an end to end path. Once at a router, the Layer Two frame gets decapsulated, the end to end IP Adresses within the packet is revealed. Once revealed the the destination is visable and proceeds in said direction.</p>
+        <p><b>Action:</b> Route data across the internet by associting each segment (created in Layer Four: Network layer) with an IP address in the header creating a "Packet" (if you are encapsulating data) or Fragmentation and Reassembing packets (if you are decapsulating data) for end to end data transmission. </p>
         <p><b>Goal:</b> Subnet networks to prevent IP Waste, Peformance Issues, and Mitigate Security Risks. Allowing us to save IP address storage (for future host growths with the Local Area Network), keep networks faster, and protect sensitive data.
+    </li>
+    <li><h3>Layer Two: Data Link</h3>
+        <p>Similar to Layer Three (The Network Layer), layer two is responsible for network traffic between nodes (I.E. Pc to Switch, Switch to Router, or Router to Router) over the Physical Layer (Layer one). Like the Network Layer, the Data Link Layer attaches. Switches and bridges operate at this level. To ensure data transfer is error free, Layer Two attaches a layer two header aswell as a layer two tail to the existing packet (Occurs during encapsulation), creating a "frame". Once the frame is sent over the connection (Either via signals or the Internet) to the reciving node (Typcially a router), decapsulation of the Data Link Layer (Layer Two; Header and Tail) occurs, revealing the IP Address stored in the Layer Three Netowork Header. With the IP Address revealed, we know where to send the packet. Encapsulation occurs once more just before the data gets sent over to its next destination, a new Layer Two header and tail is then added onto the "Packet" creating a "Frame".</p>
+        <p><b>Action:</b> Associates the data packet into frames containng a layer two head and a layer two tail (Encapsulation).</p>
+        <p><b>Goal:</b> Ensure an error free transfer from node to node for data frames, letting layers above it to remain intact.</p>
+    </li>
+    <li><h3>Layer One: Physical Layer</h3>
+        <p>This layer is the physcial and electrical communication of unstructured raw data, using bits. Digital Bits are converted into electrical (wired connections) or radio waves (wireless connections). As per the name implies, this layer defines the physical characteristics used to transfer data between devices. Such as voltage levels, maximum transmission distances and physical connectors.</p>
+        <p><b>Goal:</b> Contains data in the form of bits, uses physical methods to transport said data from on node to the next. Upong reciving data, the signals get converted into 1's and 0's sending it to the data link layer putting the frames back together. </p>
     </li>
 
 </ul>
+<hr></hr>
 <p><b>Citations and Referances:</b></p>
 <p><a href = "https://learningnetwork.cisco.com/s/article/osi-model-reference-chart"><i>The CISCO Learning Network "OSI Model Reference Chart" :  https://learningnetwork.cisco.com/s/article/osi-model-reference-chart</i></a></p>
 <p><a href = "https://www.geeksforgeeks.org/computer-networks/open-systems-interconnection-model-osi/"><i>Geeks for Geeks "What is the OSI Model? - Layers of OSI Model" :  https://www.geeksforgeeks.org/computer-networks/open-systems-interconnection-model-osi/</i></a></p>
