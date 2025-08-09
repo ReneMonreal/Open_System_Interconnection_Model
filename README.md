@@ -46,10 +46,6 @@
             <p></p>
         <li><b>Same-Layer Interactions</b></li>
         <p></p>
-
-        </li>
-
-
     </ul>
 </p>
 <h2>The Open System Interconnection Layers </h2>
