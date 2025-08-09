@@ -1,5 +1,8 @@
 <h2> OSI Model -> Open Systems Interconnnection Model</h3>
 <p>
+    Still in progress*** Dovelopement note: Include MAC Adressing and network interface card (NIC) in the layer two description
+</p>
+<p>
     <h3>Summary:</h3>
     <p>This is a research / personal project on the interwokrings and fundumental processes of the Open System Interconnection Model (OSI Model). </p>
 </p>
@@ -9,6 +12,45 @@
     <p>
         The systems are able to do so via industry Standardized Protocals, from start to finish data gets passed along a seven layered stack with each layer doing something different.
     </p>
+</p>
+<hr></hr>
+<p><h3>Vocabulary</h3>
+    <ul>
+        <li><b>Router</b> - A router allows for connections across the internet. It is a componenet that contains multiple ports to connect itself to devices (often times a switch in large corperations). Routers contain IP Addresses, these allow it to find destinations. Routers can communicate to one another over large distances, these networks can be in a single location to multiple locations</li>
+        <p></p>
+        <li><b>Switches</b> - Not to be confused with a router, a switch creates a Local Area Network for Hosts. Allows for connected devices to communicate to each other. Switches are in closer proximity than a router as they are limited due to physical connectivity.</li>
+        <p></p>
+        <li><b>Local Area Networks (LAN)</b> - A LAN Network is created by a switch, it is a netowrk that allows to locally connected devices to communicate with each other and share data.</li>
+        <p></p>
+        <li><b>Data Segments</b> - Data segments are apart of the Transport Layer (Layer Four). They are segments of the original piece of data that were broken apart for reliable and effiecent transport. Each Segment of data contains a layer four header.</li>
+        <p></p>
+        <li><b>Data Packets</b> - Data Packets pertain to the Network layer (Layer three). Packets include a layer three header, these headers contain an IP Address with the end hosts address.</li>
+        <p></p>
+        <li><b>Data Frames</b> - Data Frames are encapsulated and decapsulated in the Data Link Layer (Layer two). Each from contains a Layer two header and tail, within these </li>
+        <p></p>
+        <li><b>Bianary</b></li>
+        <p></p>
+        <li><b>IP Addresses</b></li>
+        <p></p>
+        <li><b>Sub-Networks and Subnetting</b></li>
+        <p></p>
+        <li><b>Protocals</b></li>
+        <p></p>
+        <li><b>Adjacent Layer interactions</b>
+            <ul>
+                <p></p>
+                <li>Eencapsulation</li>
+                <p></p>
+                <li>Decapsulation</li>
+            </ul>
+            <p></p>
+        <li><b>Same-Layer Interactions</b></li>
+        <p></p>
+
+        </li>
+
+
+    </ul>
 </p>
 <h2>The Open System Interconnection Layers </h2>
 <ul>
@@ -48,8 +90,11 @@
         <p>This layer is the physcial and electrical communication of unstructured raw data, using bits. Digital Bits are converted into electrical (wired connections) or radio waves (wireless connections). As per the name implies, this layer defines the physical characteristics used to transfer data between devices. Such as voltage levels, maximum transmission distances and physical connectors.</p>
         <p><b>Goal:</b> Contains data in the form of bits, uses physical methods to transport said data from on node to the next. Upong reciving data, the signals get converted into 1's and 0's sending it to the data link layer putting the frames back together. </p>
     </li>
-
 </ul>
+<hr></hr>
+<p>
+    <img src="OSI_Visuals/OSI_Model_Chart.jpg" alt="OSI Model Chart">
+</p>
 <hr></hr>
 <p><b>Citations and Referances:</b></p>
 <p><a href = "https://learningnetwork.cisco.com/s/article/osi-model-reference-chart"><i>The CISCO Learning Network "OSI Model Reference Chart" :  https://learningnetwork.cisco.com/s/article/osi-model-reference-chart</i></a></p>
