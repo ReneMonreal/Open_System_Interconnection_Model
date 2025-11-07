@@ -6,10 +6,10 @@
         <p class="pill">Research Paper</p>
         <h1>Computerized Telecommunication; The Open Systems Interconnection Model</h1>
         <p class="meta">
-          <strong>Rene Monreal</strong> (Undergraduate B,S; Cybersecurity)<br/>
+          <strong>Rene Monreal</strong>, Contact; renemonreal24@gmail.com <br/>
+          Bachelors of Science, Cybersecurity; Expected Graduation June 2027<br/>
           Department of Computer Science and Engineering, University of North Texas<br/>
-          Expected Graduation Date: June, 2027<br/>
-          October 31th, 2025
+          Published October 31th, 2025
         </p>
       </header>
  <nav class="toc" aria-label="Table of contents">
