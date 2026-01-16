@@ -1,0 +1,5 @@
+{
+    "C_Cpp.errorSquiggles": "enabledIfIncludesResolve",
+    "debug.javascript.breakOnConditionalError": true,
+    "C_Cpp.default.compilerPath": "/usr/bin/clang++"
+}
